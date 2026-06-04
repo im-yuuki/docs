@@ -4,25 +4,24 @@ layout: home
 
 hero:
   name: "Hello!"
-  text: "meow meow meow meow meow"
-  tagline: "various documentations for what I am working on 😛"
+  text: "Yuuki's Documents"
+  tagline: "various documentations for what I'm working on!"
   image:
-    src: /image.png
+    src: /logo.png
   actions:
     - theme: brand
-      text: Read documents
+      text: Documents
       link: /docs/
     - theme: alt
-      text: Useless button
-    - theme: alt
-      text: Useless button (again)
+      text: Resources
+      link: https://public.june8th.eu.org/
 
 features:
-  - title: 📚 Feature A
+  - title: Feature A
     details: 123
-  - title: ⚡ Feature B
+  - title: Feature B
     details: 456
-  - title: ✅ Feature C
+  - title: Feature C
     details: 789
 ---
 

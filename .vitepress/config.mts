@@ -2,18 +2,19 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Yuuki's Docs",
-  description: "various documentations for what I am working on",
+  title: "Yuuki's Documents",
+  description: "various documentations for what I'm working on!",
   lang: "en-US",
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
-      { text: "Documentation", link: "/docs/" },
-      { text: "CDU-UET", link: "/cdu-uet/" },
+      { text: "Documents", link: "/docs/" },
+      { text: "CDU - UET", link: "/cdu-uet/" },
+      { text: "Resources", link: "https://public.june8th.eu.org/" },
     ],
-    logo: "/image.png",
+    logo: "/logo.png",
     sidebar: {
       "/docs/": [
         {
@@ -31,26 +32,14 @@ export default defineConfig({
       ],
       "/cdu-uet/": [
         {
-          text: "CDU-UET",
+          text: "CDU - UET",
           link: "/cdu-uet/",
-        },
-        {
-          text: "Basic knowledge",
-          collapsed: false,
           items: [
             {
-              text: "VLAN",
-              link: "/cdu-uet/basic/vlan.md",
-            },
-            {
-              text: "iperf3",
-              link: "/cdu-uet/basic/iperf3.md",
-            },
-            {
-              text: "nmap",
-              link: "/cdu-uet/basic/nmap.md",
-            },
-          ],
+              text: "#TODO",
+              link: "/cdu-uet/todo.md"
+            }
+          ]
         },
         {
           text: "Cisco",
@@ -58,9 +47,9 @@ export default defineConfig({
           collapsed: false,
           items: [
             {
-              text: "Catalyst 9300",
-              link: "/cdu-uet/cisco/catalyst-9300.md",
-            },
+              text: "Administration",
+              link: "/cdu-uet/cisco/administration.md"
+            }
           ],
         },
         {
@@ -69,12 +58,26 @@ export default defineConfig({
           collapsed: false,
           items: [
             {
-              text: "AP R720",
-              link: "/cdu-uet/ruckus/r720.md",
+              text: "Access Points",
+              link: "/cdu-uet/ruckus/ap.md",
             },
             {
-              text: "ZoneDirector ZD1200",
+              text: "ZoneDirector",
               link: "/cdu-uet/ruckus/zd1200.md",
+            },
+          ],
+        },
+        {
+          text: "Utilities",
+          collapsed: true,
+          items: [
+            {
+              text: "iperf3",
+              link: "/cdu-uet/utils/iperf3.md",
+            },
+            {
+              text: "nmap",
+              link: "/cdu-uet/utils/nmap.md",
             },
           ],
         },
@@ -84,6 +87,7 @@ export default defineConfig({
       provider: "local",
     },
     socialLinks: [
+      { icon: "email", link: "mailto:me@june8th.eu.org" },
       { icon: "facebook", link: "https://www.facebook.com/june8th.dan" },
       { icon: "discord", link: "https://discord.gg/Yz9Q9etfez" },
       { icon: "github", link: "https://github.com/im-yuuki/meomeo-docs" },
