@@ -17,11 +17,14 @@ hero:
       link: https://public.june8th.eu.org/
 
 features:
-  - title: Feature A
+  - icon: 1️⃣
+    title: Feature A
     details: 123
-  - title: Feature B
+  - icon: 2️⃣
+    title: Feature B
     details: 456
-  - title: Feature C
+  - icon: 3️⃣
+    title: Feature C
     details: 789
 ---
 

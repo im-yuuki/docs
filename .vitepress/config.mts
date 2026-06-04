@@ -1,11 +1,23 @@
 import { defineConfig } from "vitepress";
+import { readFileSync } from "node:fs";
+
+const emailIcon = readFileSync(new URL("../public/icons/email.svg", import.meta.url), "utf-8");
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Yuuki's Documents",
   description: "various documentations for what I'm working on!",
-  lang: "en-US",
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
+  locales: {
+    root: {
+      label: "English",
+      lang: "en-US",
+    },
+    vi: {
+      label: "Tiếng Việt",
+      lang: "vi-VN",
+    }
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -20,14 +32,6 @@ export default defineConfig({
         {
           text: "Introduction",
           link: "/docs/",
-          collapsed: false,
-          items: [
-            {
-              text: "Example Module",
-              link: "/docs/examples.md",
-              items: [],
-            },
-          ],
         },
       ],
       "/cdu-uet/": [
@@ -87,10 +91,9 @@ export default defineConfig({
       provider: "local",
     },
     socialLinks: [
-      { icon: "email", link: "mailto:me@june8th.eu.org" },
       { icon: "facebook", link: "https://www.facebook.com/june8th.dan" },
-      { icon: "discord", link: "https://discord.gg/Yz9Q9etfez" },
       { icon: "github", link: "https://github.com/im-yuuki/meomeo-docs" },
+      { icon: { svg: emailIcon }, link: "mailto:me@june8th.eu.org" },
     ],
     footer: {
       message: "Released under The Unlicense license.",
