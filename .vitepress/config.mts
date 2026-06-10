@@ -31,57 +31,62 @@ export default defineConfig({
       "/docs/": [
         {
           text: "Introduction",
-          link: "/docs/",
+          base: "/docs/",
+          link: "."
         },
       ],
       "/cdu-uet/": [
         {
           text: "CDU - UET",
-          link: "/cdu-uet/",
+          base: "/cdu-uet/",
+          link: ".",
           items: [
             {
               text: "#TODO",
-              link: "/cdu-uet/todo.md"
+              link: "todo.md"
             }
           ]
         },
         {
           text: "Cisco",
-          link: "/cdu-uet/cisco/",
+          base: "/cdu-uet/cisco/",
+          link: ".",
           collapsed: false,
           items: [
             {
               text: "Administration",
-              link: "/cdu-uet/cisco/administration.md"
+              link: "administration.md"
             }
           ],
         },
         {
           text: "Ruckus",
-          link: "/cdu-uet/ruckus/",
+          base: "/cdu-uet/ruckus/",
+          link: ".",
           collapsed: false,
           items: [
             {
               text: "Access Points",
-              link: "/cdu-uet/ruckus/ap.md",
+              link: "ap.md",
             },
             {
               text: "ZoneDirector",
-              link: "/cdu-uet/ruckus/zd1200.md",
+              link: "zd1200.md",
             },
           ],
         },
         {
           text: "Utilities",
+          base: "/cdu-uet/utils/",
           collapsed: true,
           items: [
             {
               text: "iperf3",
-              link: "/cdu-uet/utils/iperf3.md",
+              link: "iperf3.md",
             },
             {
               text: "nmap",
-              link: "/cdu-uet/utils/nmap.md",
+              link: "nmap.md",
             },
           ],
         },
