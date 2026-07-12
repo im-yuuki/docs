@@ -56,6 +56,14 @@ export default defineConfig({
             {
               text: "Administration",
               link: "administration.md"
+            },
+            {
+              text: "Firmware",
+              link: "firmware.md"
+            },
+            {
+              text: "Reset",
+              link: "reset.md"
             }
           ],
         },
