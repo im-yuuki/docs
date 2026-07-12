@@ -1,7 +1,7 @@
 # Reset Switch Cisco
 Đặt lại cấu hình switch Cisco về trạng thái mặc định nhà sản xuất.
 
-:::warn
+:::warning
 Áp dụng cho các dòng switch Cisco Catalyst 3850, 9300 series.
 
 Có thể áp dụng cho cả các dòng switch hay thiết bị khác của Cisco, tuy nhiên mình chưa thử nghiệm.
@@ -20,7 +20,7 @@ Switch# write erase
 Switch# reload
 ```
 
-:::note
+:::tip
 Cấu hình VLAN của switch không lưu vào config trên mà được lưu ở `flash:vlan.dat`. Nếu muốn đặt lại cả cấu hình này, dùng lệnh `delete flash:vlan.dat` trước khi `reload`.
 :::
 
