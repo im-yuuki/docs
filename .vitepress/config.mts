@@ -114,4 +114,10 @@ export default defineConfig({
     },
   },
   lastUpdated: true,
+  markdown: {
+    math: true,
+    image: {
+      lazyLoading: true,
+    }
+  },
 });

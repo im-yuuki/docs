@@ -1,5 +1,5 @@
 {
-  "name": "meomeo-docs",
+  "name": "docs",
   "description": "various documentations for what I am working on :P",
   "version": "1.0.0",
   "private": true,
@@ -9,10 +9,16 @@
     "docs:preview": "vitepress preview"
   },
   "devDependencies": {
+    "markdown-it-mathjax3": "^4.3.2",
+    "postcss": "^8.5.18",
     "vitepress": "^2.0.0-alpha.17",
     "vue": "^3.5.32"
   },
   "dependencies": {
     "@types/node": "^25.9.1"
+  },
+  "allowScripts": {
+    "esbuild@0.27.7": true,
+    "fsevents@2.3.3": true
   }
 }
