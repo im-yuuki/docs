@@ -40,11 +40,12 @@ export default defineConfig({
           text: "CDU - UET",
           base: "/cdu-uet/",
           link: ".",
+          collapsed: true,
           items: [
             {
-              text: "#TODO",
-              link: "todo.md"
-            }
+              text: "Resources",
+              link: "https://public.june8th.eu.org/cdu/",
+            },
           ]
         },
         {
